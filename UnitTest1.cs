@@ -550,7 +550,7 @@ namespace SeleniumTests
                 verificationErrors.Append(e.Message);
             }
             driver.FindElement(By.XPath("//main[@id='mainContent']/div/div[4]/div/div[2]/a")).Click();
-            driver.FindElement(By.LinkText("1.")).Click();
+            //driver.FindElement(By.LinkText("1.")).Click();
             driver.FindElement(By.XPath("//main[@id='mainContent']/div/div[4]/div/div[2]/a")).Click();
             //driver.FindElement(By.LinkText("6.")).Click();
             //driver.FindElement(By.Id("fn7_doc")).Click();

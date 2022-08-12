@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 trigger:
-- main
+- master
 
 pool:
   vmImage: 'windows-latest'
@@ -32,7 +32,7 @@ steps:
   inputs:
     testSelector: 'testAssemblies'
     testAssemblyVer2: |
-      **\AzureKatalonTest.dll
+      **\Debug\net6.0\AzureKatalonTest.dll
       !**\*TestAdapter.dll
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'

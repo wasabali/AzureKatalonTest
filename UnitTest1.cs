@@ -599,6 +599,7 @@ namespace SeleniumTests
             driver.Navigate().GoToUrl("https://www.regjeringen.no/no/dokument/id2000006/?ownerid=165");
             driver.Navigate().GoToUrl("https://www.regjeringen.no/no/dokumenter/nou-2015-3/id2401179/");
             driver.FindElement(By.LinkText("Les dokumentet")).Click();
+
             //driver.FindElement(By.LinkText("Del 2 Bakgrunn")).Click();
             //driver.FindElement(By.LinkText("8.")).Click();
             //driver.FindElement(By.LinkText("30.")).Click();

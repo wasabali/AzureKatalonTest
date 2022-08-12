@@ -499,113 +499,7 @@ namespace SeleniumTests
                 Thread.Sleep(1000);
             }
         }
-        [TestMethod]
-        public void TheRV260ProdTest()
-        {
-            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/dokument/meldst/id1754/");
-            driver.FindElement(By.LinkText("Meld. St. 16 (2021–2022) - Samisk språk, kultur og samfunnsliv")).Click();
-            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/dokumenter/meld.-st.-16-20212022/id2919975/");
-            driver.FindElement(By.LinkText("Les dokumentet")).Click();
-            try
-            {
-                Assert.AreEqual("Meld. St. 16 (2021–2022)", driver.FindElement(By.XPath("//div[@id='jsDataLongdocHeaderRow']/div/div/h1")).Text);
-            }
-            catch (Exception e)
-            {
-                verificationErrors.Append(e.Message);
-            }
-            try
-            {
-                Assert.AreEqual("1 Innledning", driver.FindElement(By.XPath("//div[@id='kap1']/h1")).Text);
-            }
-            catch (Exception e)
-            {
-                verificationErrors.Append(e.Message);
-            }
-            driver.FindElement(By.XPath("//main[@id='mainContent']/div/div[4]/div/div/a")).Click();
-            try
-            {
-                Assert.AreEqual("2 Regjeringens mål for samepolitikken", driver.FindElement(By.XPath("//div[@id='kap2']/h1")).Text);
-            }
-            catch (Exception e)
-            {
-                verificationErrors.Append(e.Message);
-            }
-            driver.FindElement(By.XPath("//main[@id='mainContent']/div/div[4]/div/div/a")).Click();
-            try
-            {
-                Assert.AreEqual("3 Sametingets politiske mål", driver.FindElement(By.XPath("//div[@id='kap3']/h1")).Text);
-            }
-            catch (Exception e)
-            {
-                verificationErrors.Append(e.Message);
-            }
-            driver.FindElement(By.XPath("//main[@id='mainContent']/div/div[4]/div/div/a")).Click();
-            try
-            {
-                Assert.AreEqual("4 Økonomiske og administrative konsekvenser", driver.FindElement(By.XPath("//div[@id='kap4']/h1")).Text);
-            }
-            catch (Exception e)
-            {
-                verificationErrors.Append(e.Message);
-            }
-            driver.FindElement(By.XPath("//main[@id='mainContent']/div/div[4]/div/div[2]/a")).Click();
-            //driver.FindElement(By.LinkText("1.")).Click();
-            driver.FindElement(By.XPath("//main[@id='mainContent']/div/div[4]/div/div[2]/a")).Click();
-            //driver.FindElement(By.LinkText("6.")).Click();
-            //driver.FindElement(By.Id("fn7_doc")).Click();
-            //driver.FindElement(By.XPath("//p[@id='kap2-6-p33']/span/div/button")).Click();
-            //driver.FindElement(By.Id("fn8_doc")).Click();
-            //driver.FindElement(By.XPath("//p[@id='kap2-6-p33']/span[2]/div/button")).Click();
-            driver.FindElement(By.XPath("//nav[@id='jSDataLongdocNav']/button/span")).Click();
-            driver.FindElement(By.LinkText("2.1 En fornyet distriktspolitikk med relevans for de samiske områdene")).Click();
-            driver.FindElement(By.LinkText("2.4 FNs internasjonale tiår for urfolksspråk")).Click();
-            driver.FindElement(By.LinkText("2.6 Likeverdige tjenestetilbud til den samiske befolkningen")).Click();
-            driver.FindElement(By.LinkText("2.7 Næringsutvikling")).Click();
-            driver.FindElement(By.LinkText("3 Sametingets politiske mål")).Click();
-            driver.FindElement(By.LinkText("4 Økonomiske og administrative konsekvenser")).Click();
-            driver.FindElement(By.LinkText("Tilråding")).Click();
-            driver.FindElement(By.LinkText("Referanseliste")).Click();
-            driver.FindElement(By.XPath("//div[@id='jsIdLongdocNavInner']/div[2]/div/div/button")).Click();
-            driver.FindElement(By.Id("quickSearch")).Click();
-            driver.FindElement(By.Id("quickSearch")).Clear();
-            driver.FindElement(By.Id("quickSearch")).SendKeys("nou");
-            driver.FindElement(By.Id("topNavigationSearchForm")).Submit();
-            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/sok/id86008/?term=nou");
-           // driver.FindElement(By.XPath("//ul[@id='searchResultsListing']/li[6]/h2/a")).Click();
-            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/dokumenter/horing-nou-202111-selvstyrt-er-velstyrt/id2902914/");
-            try
-            {
-                Assert.AreEqual("Høring NOU 2021:11 Selvstyrt er velstyrt", driver.FindElement(By.XPath("//main[@id='mainContent']/div/div/div/header/h1")).Text);
-            }
-            catch (Exception e)
-            {
-                verificationErrors.Append(e.Message);
-            }
-            driver.FindElement(By.XPath("//main[@id='mainContent']/div/div/div/div[3]/div[3]/div/h2/button")).Click();
-            try
-            {
-                Assert.AreEqual("Høring av NOU 2021:11 «Selvstyrt er velstyrt»", driver.FindElement(By.XPath("//div[@id='horingsbrev']/p/strong")).Text);
-            }
-            catch (Exception e)
-            {
-                verificationErrors.Append(e.Message);
-            }
-            driver.FindElement(By.XPath("//main[@id='mainContent']/div/div/div/div[3]/div[3]/div[2]/h2/button")).Click();
-            driver.FindElement(By.Id("megamenupanel_3_label")).Click();
-            driver.FindElement(By.LinkText("Arbeids- og inkluderingsdepartementet")).Click();
-            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/dep/aid/id165/");
-            driver.FindElement(By.XPath("//main[@id='mainContent']/div/div[6]/div[3]/p/a")).Click();
-            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/dokument/id2000006/?ownerid=165");
-            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/dokumenter/nou-2015-3/id2401179/");
-            driver.FindElement(By.LinkText("Les dokumentet")).Click();
-
-            //driver.FindElement(By.LinkText("Del 2 Bakgrunn")).Click();
-            //driver.FindElement(By.LinkText("8.")).Click();
-            //driver.FindElement(By.LinkText("30.")).Click();
-            //driver.FindElement(By.LinkText("26.")).Click();
-            //driver.FindElement(By.LinkText("20.")).Click();
-        }
+      
         [TestMethod]
         public void TheRV71EngelskProdTest()
         {
@@ -731,6 +625,7 @@ namespace SeleniumTests
             driver.Navigate().GoToUrl("https://www.regjeringen.no/en/search/id86008/?term=he");
             driver.Navigate().GoToUrl("https://www.regjeringen.no/en/search/id86008/?term=stoltenberg&page=2");
         }
+
         private bool IsElementPresent(By by)
         {
             try

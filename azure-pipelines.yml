@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
 trigger:
-- master
+- main
 
 pool:
   vmImage: 'windows-latest'
@@ -32,12 +32,11 @@ steps:
   inputs:
     testSelector: 'testAssemblies'
     testAssemblyVer2: |
-      **\AzureKatalonTest.dll
+      **\AzureKatalonTest.*test*.dll
       !**\*TestAdapter.dll
       !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
-    uiTests: true
-    vsTestVersion: 'toolsInstaller'
     runTestsInIsolation: true
+    codeCoverageEnabled: true
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'

@@ -1,0 +1,5 @@
+C:\Users\pa_waal\source\repos\AzureKatalonTest\obj\Debug\net5.0\AzureKatalonTest.csproj.AssemblyReference.cache
+C:\Users\pa_waal\source\repos\AzureKatalonTest\obj\Debug\net5.0\AzureKatalonTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pa_waal\source\repos\AzureKatalonTest\obj\Debug\net5.0\AzureKatalonTest.AssemblyInfoInputs.cache
+C:\Users\pa_waal\source\repos\AzureKatalonTest\obj\Debug\net5.0\AzureKatalonTest.AssemblyInfo.cs
+C:\Users\pa_waal\source\repos\AzureKatalonTest\obj\Debug\net5.0\AzureKatalonTest.csproj.CoreCompileInputs.cache

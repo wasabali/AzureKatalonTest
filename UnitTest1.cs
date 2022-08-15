@@ -22,7 +22,7 @@ namespace SeleniumTests
         [ClassInitialize]
         public static void InitializeClass(TestContext testContext)
         {
-            driver = new SafariDriver();
+            driver = new ChromeDriver();
             baseURL = "https://www.google.com/";
         }
 

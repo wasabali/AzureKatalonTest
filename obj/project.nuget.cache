@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QBOtJmCqdyM4cWoC74OxdNoh9wxogos0jQoI2noADNzajJWgWzul0vLCaP0C9gDpX8WreeWWpTSdGv6vBbOA6Q==",
+  "dgSpecHash": "iJS+Yv8vdX3o6Zi7egIMBTTpx/lDIn+u8p3lqq+UYMRc/IRrmjYwWfNC8jlCVx9wf5dX8jx1jW/TvzVgK/sJuQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\pa_waal\\source\\repos\\AzureKatalonTest\\AzureKatalonTest.csproj",
   "expectedPackageFiles": [
@@ -44,10 +44,7 @@
     "C:\\Users\\pa_waal\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\pa_waal\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\pa_waal\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\pa_waal\\.nuget\\packages\\webdrivermanager\\2.14.1\\webdrivermanager.2.14.1.nupkg.sha512",
-    "C:\\Users\\pa_waal\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\pa_waal\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\pa_waal\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\pa_waal\\.nuget\\packages\\webdrivermanager\\2.14.1\\webdrivermanager.2.14.1.nupkg.sha512"
   ],
   "logs": []
 }

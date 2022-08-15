@@ -22,7 +22,7 @@ namespace SeleniumTests
         [ClassInitialize]
         public static void InitializeClass(TestContext testContext)
         {
-            driver = new SafariDriver();
+            driver = new ChromeDriver();
             baseURL = "https://www.google.com/";
         }
 
@@ -107,11 +107,11 @@ namespace SeleniumTests
             driver.FindElement(By.Id("quickSearch")).SendKeys("statsbudsjettet 2020");
             driver.FindElement(By.Id("topNavigationSearchForm")).Submit();
             driver.Navigate().GoToUrl("https://www.regjeringen.no/no/sok/id86008/?term=statsbudsjettet+2020");
-            driver.FindElement(By.LinkText("Statsbudsjettet 2020: Trøndelag")).Click();
+            driver.FindElement(By.LinkText("Statsbudsjettet 2020: TrÃ¸ndelag")).Click();
             driver.Navigate().GoToUrl("https://www.regjeringen.no/no/statsbudsjett/2020/statsbudsjettet-2020-fylkesoversikten/statsbudsjettet-2020-trondelag/id2714647/");
             try
             {
-                Assert.AreEqual("Statsbudsjettet 2020: Trøndelag - regjeringen.no", driver.Title);
+                Assert.AreEqual("Statsbudsjettet 2020: TrÃ¸ndelag - regjeringen.no", driver.Title);
             }
             catch (Exception e)
             {
@@ -180,7 +180,7 @@ namespace SeleniumTests
                 Thread.Sleep(1000);
             }
             driver.FindElement(By.Id("megamenupanel_1_label")).Click();
-            driver.FindElement(By.LinkText("Høyringar")).Click();
+            driver.FindElement(By.LinkText("HÃ¸yringar")).Click();
             driver.Navigate().GoToUrl("https://www.regjeringen.no/no/dokument/hoyringar/id1763/");
             for (int second = 0; ; second++)
             {
@@ -246,17 +246,17 @@ namespace SeleniumTests
             }
             try
             {
-                Assert.AreEqual("Høyringar - regjeringen.no", driver.Title);
+                Assert.AreEqual("HÃ¸yringar - regjeringen.no", driver.Title);
             }
             catch (Exception e)
             {
                 verificationErrors.Append(e.Message);
             }
-            driver.FindElement(By.LinkText("Høring – Forslag til endringer i arbeidsmiljøloven mv. – tilpasninger av regelverket for yrkesdykking")).Click();
+            driver.FindElement(By.LinkText("HÃ¸ring Â– Forslag til endringer i arbeidsmiljÃ¸loven mv. Â– tilpasninger av regelverket for yrkesdykking")).Click();
             driver.Navigate().GoToUrl("https://www.regjeringen.no/no/dokumenter/horing-forslag-til-endringer-i-arbeidsmiljoloven-mv.-tilpasninger-av-regelverket-for-yrkesdykking/id2921633/");
             try
             {
-                Assert.AreEqual("Høring – Forslag til endringer i arbeidsmiljøloven mv. – tilpasninger av regelverket for yrkesdykking - regjeringen.no", driver.Title);
+                Assert.AreEqual("HÃ¸ring Â– Forslag til endringer i arbeidsmiljÃ¸loven mv. Â– tilpasninger av regelverket for yrkesdykking - regjeringen.no", driver.Title);
             }
             catch (Exception e)
             {
@@ -281,11 +281,11 @@ namespace SeleniumTests
             driver.FindElement(By.XPath("//a[contains(text(),'Landbruks- og matdepartementet\n                            (7)')]")).Click();
             driver.FindElement(By.Id("customSelectorTriggerfrom")).Click();
             driver.FindElement(By.XPath("//a[contains(text(),'2006\n                            (1)')]")).Click();
-            driver.FindElement(By.LinkText("Redegjørelse for Stortinget 28. mars 2006 om E.coli O 103, ved Landbruks- og matminister Terje Riis-Johansen")).Click();
+            driver.FindElement(By.LinkText("RedegjÃ¸relse for Stortinget 28. mars 2006 om E.coli O 103, ved Landbruks- og matminister Terje Riis-Johansen")).Click();
             driver.Navigate().GoToUrl("https://www.regjeringen.no/no/dokumentarkiv/stoltenberg-ii/lmd/svar-til-stortinget/sporretimesporsmal/2006/redegjorelse-for-stortinget-28-mars-2006/id469786/");
             try
             {
-                Assert.AreEqual("Redegjørelse for Stortinget 28. mars 2006 om E.coli O 103, ved Landbruks- og matminister Terje Riis-Johansen", driver.FindElement(By.XPath("//main[@id='mainContent']/div/div/div/header/h1")).Text);
+                Assert.AreEqual("RedegjÃ¸relse for Stortinget 28. mars 2006 om E.coli O 103, ved Landbruks- og matminister Terje Riis-Johansen", driver.FindElement(By.XPath("//main[@id='mainContent']/div/div/div/header/h1")).Text);
             }
             catch (Exception e)
             {
@@ -346,7 +346,7 @@ namespace SeleniumTests
                 if (second >= 60) Assert.Fail("timeout");
                 try
                 {
-                    if (IsElementPresent(By.LinkText("Statsminister Jonas Gahr Støres tale på minnearrangementet på Utøya 22. juli 2022"))) break;
+                    if (IsElementPresent(By.LinkText("Statsminister Jonas Gahr StÃ¸res tale pÃ¥ minnearrangementet pÃ¥ UtÃ¸ya 22. juli 2022"))) break;
                 }
                 catch (Exception)
                 { }
@@ -357,7 +357,7 @@ namespace SeleniumTests
                 if (second >= 60) Assert.Fail("timeout");
                 try
                 {
-                    if (IsElementPresent(By.LinkText("Statsminister Jonas Gahr Støres tale i regjeringskvartalet 22. juli 2022"))) break;
+                    if (IsElementPresent(By.LinkText("Statsminister Jonas Gahr StÃ¸res tale i regjeringskvartalet 22. juli 2022"))) break;
                 }
                 catch (Exception)
                 { }
@@ -368,7 +368,7 @@ namespace SeleniumTests
                 if (second >= 60) Assert.Fail("timeout");
                 try
                 {
-                    if (IsElementPresent(By.LinkText("Statsministerens tale ved åpningen av Nasjonalmuseet"))) break;
+                    if (IsElementPresent(By.LinkText("Statsministerens tale ved Ã¥pningen av Nasjonalmuseet"))) break;
                 }
                 catch (Exception)
                 { }
@@ -379,7 +379,7 @@ namespace SeleniumTests
                 if (second >= 60) Assert.Fail("timeout");
                 try
                 {
-                    if (IsElementPresent(By.LinkText("Statsministerens tale ved åpningen av Festspillene i Bergen"))) break;
+                    if (IsElementPresent(By.LinkText("Statsministerens tale ved Ã¥pningen av Festspillene i Bergen"))) break;
                 }
                 catch (Exception)
                 { }
@@ -391,7 +391,7 @@ namespace SeleniumTests
                 if (second >= 60) Assert.Fail("timeout");
                 try
                 {
-                    if (IsElementPresent(By.LinkText("Meld. St. 20 (2020–2021) - Nasjonal transportplan 2022–2033"))) break;
+                    if (IsElementPresent(By.LinkText("Meld. St. 20 (2020Â–2021) - Nasjonal transportplan 2022Â–2033"))) break;
                 }
                 catch (Exception)
                 { }
@@ -402,7 +402,7 @@ namespace SeleniumTests
                 if (second >= 60) Assert.Fail("timeout");
                 try
                 {
-                    if (IsElementPresent(By.LinkText("Nasjonal transportplan 2022–2033: Beregninger og forutsetninger for leveranse til 15.10.20"))) break;
+                    if (IsElementPresent(By.LinkText("Nasjonal transportplan 2022Â–2033: Beregninger og forutsetninger for leveranse til 15.10.20"))) break;
                 }
                 catch (Exception)
                 { }
@@ -413,7 +413,7 @@ namespace SeleniumTests
                 if (second >= 60) Assert.Fail("timeout");
                 try
                 {
-                    if (IsElementPresent(By.LinkText("Nasjonal transportplan 2022-2033: Høring av transportvirksomhetenes svar på oppdrag fra Samferdselsdepartementet"))) break;
+                    if (IsElementPresent(By.LinkText("Nasjonal transportplan 2022-2033: HÃ¸ring av transportvirksomhetenes svar pÃ¥ oppdrag fra Samferdselsdepartementet"))) break;
                 }
                 catch (Exception)
                 { }
@@ -442,7 +442,7 @@ namespace SeleniumTests
             driver.Navigate().GoToUrl("https://www.regjeringen.no/no/sok/id86008/?term=kroatsia");
             try
             {
-                Assert.AreEqual("Søket ditt gav 0 treff.", driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='Velg tidsperiode'])[2]/following::h2[1]")).Text);
+                Assert.AreEqual("SÃ¸ket ditt gav 0 treff.", driver.FindElement(By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='Velg tidsperiode'])[2]/following::h2[1]")).Text);
             }
             catch (Exception e)
             {

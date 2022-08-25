@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iJS+Yv8vdX3o6Zi7egIMBTTpx/lDIn+u8p3lqq+UYMRc/IRrmjYwWfNC8jlCVx9wf5dX8jx1jW/TvzVgK/sJuQ==",
+  "dgSpecHash": "TiI4a/bLfbAJcdwdfz6ZPAnxvBdG7v1TQh3dilqO+jkN/lFDT6vb7GXnshJWxxHECc8JF0aOXDiYELbOxExLcw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pa_waal\\source\\repos\\AzureKatalonTest\\AzureKatalonTest.csproj",
+  "projectFilePath": "C:\\Users\\pa_waal\\Source\\Repos\\AzureKatalonTest\\AzureKatalonTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pa_waal\\.nuget\\packages\\anglesharp\\0.17.1\\anglesharp.0.17.1.nupkg.sha512",
     "C:\\Users\\pa_waal\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pa_waal\\source\\repos\\AzureKatalonTest\\AzureKatalonTest.csproj": {}
+    "C:\\Users\\pa_waal\\Source\\Repos\\AzureKatalonTest\\AzureKatalonTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pa_waal\\source\\repos\\AzureKatalonTest\\AzureKatalonTest.csproj": {
+    "C:\\Users\\pa_waal\\Source\\Repos\\AzureKatalonTest\\AzureKatalonTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pa_waal\\source\\repos\\AzureKatalonTest\\AzureKatalonTest.csproj",
+        "projectUniqueName": "C:\\Users\\pa_waal\\Source\\Repos\\AzureKatalonTest\\AzureKatalonTest.csproj",
         "projectName": "AzureKatalonTest",
-        "projectPath": "C:\\Users\\pa_waal\\source\\repos\\AzureKatalonTest\\AzureKatalonTest.csproj",
+        "projectPath": "C:\\Users\\pa_waal\\Source\\Repos\\AzureKatalonTest\\AzureKatalonTest.csproj",
         "packagesPath": "C:\\Users\\pa_waal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pa_waal\\source\\repos\\AzureKatalonTest\\obj\\",
+        "outputPath": "C:\\Users\\pa_waal\\Source\\Repos\\AzureKatalonTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pa_waal\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -49,9 +49,23 @@ namespace SeleniumTests
         }
 
         [TestMethod]
-        public void TheRV71ProdTest()
+        public void TestAvForsiden()
         {
             driver.Navigate().GoToUrl("https://www.regjeringen.no/no/id4/");
+            driver.FindElement(By.LinkText("UDs reiseinformasjon")).Click();
+            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/tema/utenrikssaker/reiseinformasjon/id2413163/");
+            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/id4/");
+            driver.FindElement(By.XPath("//img[@alt='To riksløver og teksten Norge og Departementene']")).Click();
+            driver.FindElement(By.XPath("//button[@type='button']")).Click();
+            driver.FindElement(By.XPath("//img[@alt='Portrett av finansminister Trygve Slagsvold Vedum mot en grå bakvegg.']")).Click();
+            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/aktuelt/presseinvitasjon-finansministerens-foredrag-for-budsjettkonferansen/id2925434/");
+            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/id4/");
+            driver.FindElement(By.XPath("//main[@id='mainContent']/div/div[5]/div[3]/div/div[2]/h3/a")).Click();
+            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/tema/naringsliv/id926/");
+            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/id4/");
+            driver.FindElement(By.XPath("//main[@id='mainContent']/div/div[6]/div/div/div[2]/button[2]")).Click();
+            driver.FindElement(By.XPath("//main[@id='mainContent']/div/div[6]/ul/li[3]/a")).Click();
+            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/om-regjeringa/slik-blir-norge-styrt/id85844/");
         }
 
         [TestMethod]

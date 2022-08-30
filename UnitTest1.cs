@@ -71,8 +71,7 @@ namespace SeleniumTests
         [TestMethod]
         public void TheRV71EngelskProdTest()
         {
-            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/id4/");
-            driver.FindElement(By.XPath("//main[@id='mainContent']/feil/div[6]/ul/feil[3]/a")).Click();
+            driver.Navigate().GoToUrl("https://www.regjeringen.no/no/id4/");            
         }
 
         

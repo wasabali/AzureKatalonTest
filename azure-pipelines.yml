@@ -19,8 +19,6 @@ steps:
 
 - task: NuGetCommand@2
   inputs:
-    feedsToUse: 'config'
-    nugetConfigPath: 'src/Nuget.config'
     restoreSolution: '$(solution)'
 
 - task: VSBuild@1
